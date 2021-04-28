@@ -1,0 +1,111 @@
+/*Contact sectiom*/
+
+.content-header {
+  font-family: "Oleo Script", cursive;
+  color: #fcc500;
+  font-size: 45px;
+}
+
+.section-content {
+  text-align: center;
+  margin-top: -60px;
+}
+
+.scritte {
+  font-family: Verdana;
+  font-size: 15px;
+}
+.form-control {
+  font-family: Verdana;
+  font-size: 13px;
+}
+
+#contact {
+  margin-top: -59px;
+  font-family: "Teko", sans-serif;
+  padding-top: 60px;
+  width: 1000px;
+  width: auto;
+  height: 220px;
+  background: #3a6186;
+  background: -webkit-linear-gradient(to left, #3a6186, #959293);
+  background: linear-gradient(to left, #3a6186, #694f58);
+  color: #fff;
+}
+.contact-section {
+  padding-top: 40px;
+}
+.contact-section .col-md-6 {
+  width: 50%;
+  margin-top: 0px;
+}
+
+.form-line {
+  border-right: 1px solid #b29999;
+}
+
+.form-group {
+  margin-top: 10px;
+}
+label {
+  font-size: 1.3em;
+  line-height: 1em;
+  font-weight: normal;
+}
+.form-control {
+  font-size: 1.3em;
+  color: #080808;
+}
+textarea.form-control {
+  height: 135px;
+}
+
+.submit {
+  font-size: 1.1em;
+  float: right;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+}
+
+#giorno {
+  margin-left: -3300px;
+  width: 150px;
+  background-color: transparent;
+  color: #fff;
+}
+
+#gg {
+  margin-left: -30px;
+}
+
+#mm {
+  margin-top: -41px;
+  margin-left: -30px;
+}
+#yy {
+  margin-top: -41px;
+  margin-left: -30px;
+}
+
+#slash1 {
+  margin-left: -48px;
+  font-size: 20px;
+  margin-top: 4px;
+  color: #d6d6d6;
+}
+
+#select {
+  height: 300px;
+  padding: 30px;
+}
+
+#exampleInputEmail {
+  height: 33px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#cerca {
+  margin-top: -10px;
+}

@@ -1,0 +1,52 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div
+  class="d-flex align-items-center justify-content-center"
+  style="height: 700px"
+  id="boxlog"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+          [(ngModel)]="credentials.username"
+         id="username"
+        />
+      </div>
+      <div class="col-4"></div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4">
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          aria-label="Password"
+          aria-describedby="basic-addon1"
+          [(ngModel)]="credentials.password"
+          id="username"
+
+        />
+      </div>
+      <div class="col-4"></div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4 text-center">
+        <button type="button"  id="bottoneLog" class="btn btn-default submit" (click)="login()"><i _ngcontent-wbl-c3 class="fa " aria-hidden="true" ></i>Login</button>
+      </div>
+      <div class="col-4"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+<div>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!------ Include the above in your HEAD tag ---------->
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+ <div  class="wrapper">
+        <table id="acrylic">
+            <thead>
+                <tr *ngIf="clienti" class="header">
+                    <th>Nome</th>
+                    <th>Cab</th>
+                    <th>Nag</th>
+                    <th>Data di nascita</th>
+                    <th>Dettagli</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let cliente of clienti | paginate: { itemsPerPage: 6, currentPage: p }" (click)="openModal(cliente)" data-toggle="modal" data-target="#exampleModalScrollable" >
+                <td>{{cliente.nome}}</td> 
+                <td>{{cliente.cab}}</td>
+                <td>{{cliente.nag}}</td>
+                <td>{{cliente.dataNascita}}</td>
+                <td> 
+
+                  <div *ngIf="!cliente.confermato">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-pencil-square"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+                    />
+                  </svg>
+                </div>
+                <div *ngIf="cliente.confermato">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-window"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                    <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z" />
+                  </svg>
+                  </div>
+                </td></tr>
+                <pagination-controls  *ngIf="clienti" (pageChange)="p = $event"></pagination-controls>
+            </tbody>
+        </table>
+        
+    </div>
+   
+    <app-modale [clientiModale]="clienteP" ></app-modale>
+
+</div>
+<head>
+	<title>Bootstrap</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+  

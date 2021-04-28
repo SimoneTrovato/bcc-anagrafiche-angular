@@ -1,0 +1,58 @@
+
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <app-navbar></app-navbar>
+<section id="contact">
+			<div class="section-content">
+			</div>
+			<div class="contact-section">
+			<div class="container">
+				<form>
+					<div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				<label  class="scritte" for="exampleInputUsername">Nome</label>
+					    	<input [(ngModel)]="customerName" name="customerName"  type="text" class="form-control" id="" >
+				  		</div>
+				  		<div class="form-group">
+					    	<label  class="scritte" for="select">Filiale</label>
+                <select  class="form-control"
+                value=""
+                id="select"
+                name="branch"
+                id="exampleInputEmail" [(ngModel)]="branch" name="branch"
+              >
+                <option  value="" ></option>
+                <option   value="{{filiale.id}}" *ngFor="let filiale of filiali">{{filiale.nome}}</option>
+                </select>
+					 <!--   	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Filiale"> -->
+					  	</div>	
+					  
+			  		</div>
+			  		<div class="col-md-6">
+			  			<div class="form-group">
+					    	<label class="scritte" for="telephone">Nag</label>
+					    	<input [(ngModel)]="nag" name="nag"  type="text" class="form-control" id="data" >
+			  			</div>	<div class="form-group">
+					    	<div class="it-datepicker-wrapper theme-dark">
+								<div class="form-group"> 
+								 <label class="scritte" for="date2" > Data</label>
+								 <input [(ngModel)]="birthDate" name="birthDate" class="form-control" type="date" value="birthDate" id="example-date-input">					
+							<div class="alert alert-danger" *ngIf="customerName && birthDate==''  ">INSERIRE DATA</div>
+							
+								</div>
+							  </div>
+			  			</div>
+			  			<div>
+			  				<button type="button" id="cerca" class="btn btn-default submit" (click)="cerca()"><i class="fa " aria-hidden="true" ></i>  Cerca</button>
+			  			</div>
+			  			
+					</div>
+				</form>
+			</div>
+		<!--	<tr *ngFor="let cliente of clienti">{{cliente}} ></tr>  <app-clienti [clienti]="clienti"></app-clienti>
+		 -->
+		 
+			
+			

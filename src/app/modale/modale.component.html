@@ -1,0 +1,330 @@
+<!--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+<!------ Include the above in your HEAD tag --------
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="modal fade" id="exampleModalScrollable"  role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalScrollableTitle">{{clientiModale.nome}}</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+      <ul class="list-unstyled">
+        <li>
+          <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Nag: {{clientiModale.nag}} </p>
+        </li>
+        <li>
+          <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Data di nascita: {{clientiModale.dataNascita}}</p>
+        </li>
+        <li>
+          <p class="option">
+            <span class="glyphicon glyphicon-ok inactive"    aria-hidden="true">
+
+            </span>Numero di telefono: {{clientiModale .telefono}}
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+        </li>  
+        <li>
+          <p class="option">
+           <span class="glyphicon glyphicon-ok inactive" aria-hidden="true">
+             
+           </span>Email: {{clientiModale .email}}<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>     
+      </li>
+          <li>
+             <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 1<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+         </li> <li>
+             <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 2<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+         </li> <li>
+             <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 3<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+         </li> <li>
+             <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 4<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+         </li> <li>
+             <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 5<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+         </li> <li>
+             <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 6<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+         </li> <li>
+             <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Firma grafometrica <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></p>
+         </li>
+   </ul>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>  -->
+ 
+<!-- Modal 
+
+<div class="modal-header">
+	<h4 class="modal-title">Hi there!</h4>
+	<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+	  <span aria-hidden="true">&times;</span>
+	</button>
+  </div>
+  <div class="modal-body">
+	<p>Hello, {{clientiModale.nome}}!</p>
+  </div>
+  <div class="modal-footer">
+	<button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  </div>-->
+
+  <!-- Modal
+  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-scrollable" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalScrollableTitle">{{clientiModale.nome}}</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <h1>test</h1>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>      
+ -->
+
+
+  <!---
+<div id="modal-content">
+	<div class="modal-header">
+	  <h4 class="modal-title">ww</h4>
+	</div>
+	<div class="modal-body">
+	  fdgdf
+	</div>
+	<div class="modal-footer">
+
+		  Conferma
+
+	</div>
+</div>
+-->
+
+
+<!-- 
+<div *ngIf="modaleAperta"  class="container">
+	<div class="row col-list">
+		
+				
+		<div class="col-md-4 t3" id="info">
+			<div class="col-head text-center">
+				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+				<h2>{{clientiModale.nome}}</h2>
+			</div>
+			<ul class="list-unstyled">
+	         <li>
+	         	<p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Nag: {{clientiModale.nag}} </p>
+	         </li>
+	         <li>
+	         	<p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Data di nascita: {{clientiModale.dataNascita}}</p>
+	         </li>
+	         <li>
+	         	<p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Numero di telefono: {{clientiModale.telefono}}</p>
+	         </li>
+	         <li>
+	         	<p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Email: {{clientiModale.email}}</p>
+	         </li>
+             <li>
+                <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 1</p>
+            </li> <li>
+                <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 2</p>
+            </li> <li>
+                <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 3</p>
+            </li> <li>
+                <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 4</p>
+            </li> <li>
+                <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 5</p>
+            </li> <li>
+                <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 6</p>
+            </li> <li>
+                <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Firma grafometrica</p>
+            </li>
+			</ul>
+            <button type="button" class="btn btn-secondary" id="ann" (click)="annulla()">Annulla</button>
+            <button type="button" class="btn btn-primary" id="con">Conferma</button>
+		</div>
+	</div>
+  	<hr />
+  	<div class="text-right">
+	
+	</div>	
+</div>
+
+-->
+<!-- 
+<div class="col-md-4 t2">
+			<div class="col-head text-center">
+				<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+				<h2>Col List #2</h2>
+			</div>
+			<ul class="list-unstyled">
+	         <li>
+	         	<p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Option #2 #1</p>
+	         </li>
+	         <li>
+	         	<p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Option #2 #2</p>
+	         </li>
+			</ul>
+		</div>
+
+-->
+
+<div>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	</div>
+	<head>
+		<title>Bootstrap</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	  </head>
+	  
+	 
+	<!-- Button trigger modal 
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+		Launch demo modal
+	  </button>-->
+	  
+	  <!-- Modal -->
+	 <div>
+	  	  <div *ngIf="!clientiModale.confermato  "  class="modal fade" id="exampleModalScrollable"  role="dialog" aria-hidden="true">
+		<div *ngIf="!conferma "  class="modal-dialog" role="document" >
+		  <div   class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalScrollableTitle">{{ clientiModale.nome}}</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="chiudi()">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+		  <ul class="list-unstyled">
+			  <li>
+			  <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Nag: {{clientiModale.nag }} </p>
+			</li>
+			<li>
+			  <p class="option"><span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Data di nascita: {{clientiModale.dataNascita}}</p>
+			</li>
+			<li>
+			  <p class="option"><input class="form-check-input" type="checkbox"  id="flexCheckDefault" [checked]="campi[1].isChecked" (change)="handleCheck(  campi[1], clientiModale.telefono)" 
+				>
+				<span class="glyphicon glyphicon-ok inactive"    aria-hidden="true">
+	
+				</span>Numero di telefono: {{clientiModale.telefono}}
+				</p>
+			</li>  
+			<li>
+			  <p class="option"><input class="form-check-input" type="checkbox"  id="flexCheckDefault" [checked]="campi[0].isChecked" (change)="handleCheck(  campi[0], clientiModale.email)">
+			   <span class="glyphicon glyphicon-ok inactive" aria-hidden="true">
+				 
+			   </span>Email: {{clientiModale.email}}
+			   </p>     
+		  </li>
+			  <li>
+				 <p class="option"><input class="form-check-input" type="checkbox" id="flexCheckDefault" [checked]="campi[2].isChecked" (change)="handleCheck(  campi[2], clientiModale.p1)">
+					<span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 1 : {{handlePrivacy(clientiModale.p1)}}
+					</p>
+			 </li> <li>
+				 <p class="option">
+					<input class="form-check-input" type="checkbox"   id="flexCheckDefault" [checked]="campi[3].isChecked" (change)="handleCheck(  campi[3], clientiModale.p2)" id="flexCheckDefault"> 
+					<span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 2 : {{handlePrivacy(clientiModale.p2)}}
+					</p>
+			 </li> <li>
+				 <p class="option">
+					<input class="form-check-input" type="checkbox"  id="flexCheckDefault" [checked]="campi[4].isChecked" (change)="handleCheck(  campi[4], clientiModale.p3)" id="flexCheckDefault"> 
+					<span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 3 : {{handlePrivacy(clientiModale.p3)}}
+					</p>
+			 </li> <li>
+				 <p class="option">
+					<input class="form-check-input" type="checkbox"  id="flexCheckDefault" [checked]="campi[5].isChecked" (change)="handleCheck(  campi[5], clientiModale.p4)" id="flexCheckDefault"> 
+					<span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 4 : {{handlePrivacy(clientiModale.p4)}}
+					</p>
+			 </li> <li>
+				 <p class="option">
+					<input class="form-check-input" type="checkbox"  id="flexCheckDefault" [checked]="campi[6].isChecked" (change)="handleCheck(  campi[6], clientiModale.p5)" id="flexCheckDefault"> 
+					<span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 5 : {{handlePrivacy(clientiModale.p5)}}
+					</p>
+			 </li> <li>
+				 <p class="option">
+					<input class="form-check-input" type="checkbox"  id="flexCheckDefault" [checked]="campi[7].isChecked" (change)="handleCheck(  campi[7], clientiModale.p6)" id="flexCheckDefault"> 
+					<span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Privacy 6 : {{handlePrivacy(clientiModale.p6)}}
+					</p>
+			 </li> <li>
+				 <p class="option">
+					<input class="form-check-input" type="checkbox"  id="flexCheckDefault" [checked]="campi[8].isChecked" (change)="handleCheck(  campi[8], clientiModale.firma)" id="flexCheckDefault"> 
+					<span class="glyphicon glyphicon-ok inactive" aria-hidden="true"></span>Firma grafometrica  : {{handlePrivacy(clientiModale.firma)}}
+					</p>
+			 </li>
+	   </ul>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" (click)="chiudi()" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary" (click)="salva(clientiModale)">Conferma</button>
+			</div>
+		  </div>
+		</div>
+
+		<div *ngIf="conferma" class="modal-dialog" role="document" >
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalScrollableTitle">{{ clientiModale.nome}}</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="chiudi()">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+			<ul class="list-unstyled">
+  CONFERMARE? 		</ul>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" (click)="nonConferma()" data-dismiss="modal">No</button>
+				<button  type="button" class="btn btn-primary" (click)="confermare(clientiModale)">Si</button>
+			  </div>
+			</div>
+		  </div>
+
+	  </div>  
+
+
+	  
+
+	
+
+	  <!-- MODALE CONFERMATA
+	  -->
+	  <div *ngIf="clientiModale.confermato" class="modal fade" id="exampleModalScrollable"  role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document" >
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalScrollableTitle">{{ clientiModale.nome}}</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="chiudi()">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+		  <ul class="list-unstyled">
+CLIENTE CONFERMATO. CODICE {{clientiModale.codice}}
+			</ul>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" (click)="chiudi()" data-dismiss="modal">OK</button>
+			</div>
+		  </div>
+		</div>
+	  </div>  
+	

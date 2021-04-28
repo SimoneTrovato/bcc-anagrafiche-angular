@@ -1,0 +1,31 @@
+.container {
+  height: 10px;
+  margin-top: -20px;
+}
+.navbar-header {
+}
+#nav {
+  background: linear-gradient(to left, #14222f, #2c2125);
+  color: #fff;
+  height: 10px;
+  margin-top: -20px;
+}
+.nav navbar-nav navbar-right {
+  height: 10px;
+  margin-top: -30px;
+}
+
+.navbar-brand {
+  margin-right: 3000px;
+  margin-top: 0px;
+}
+
+.navbar-logout {
+  margin-top: -50px;
+}
+.navbar navbar-inverse navbar-static-top {
+  background: linear-gradient(to left, #3a6186, #694f58);
+  color: #fff;
+  height: 10px;
+  margin-top: -30px;
+}

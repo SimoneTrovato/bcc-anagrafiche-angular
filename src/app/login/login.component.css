@@ -1,0 +1,51 @@
+#boxlog {
+  margin-top: -50px;
+  font-family: "Teko", sans-serif;
+  padding-top: 60px;
+  width: 1000px;
+  width: auto;
+  height: 230px;
+  background: #3a6186; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #3a6186,
+    #959293
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #3a6186,
+    #694f58
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+
+#username {
+  font-size: 16px;
+}
+
+#bottoneLog {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  color: #fff;
+}
+#bottoneLog:hover {
+  background-color: rgb(105, 105, 105);
+}
